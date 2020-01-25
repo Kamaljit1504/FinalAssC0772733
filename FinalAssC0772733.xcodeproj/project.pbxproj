@@ -16,6 +16,9 @@
 		9BA4E32C23DBCE9200E2279F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BA4E32A23DBCE9200E2279F /* LaunchScreen.storyboard */; };
 		9BA4E33723DBCE9200E2279F /* FinalAssC0772733Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4E33623DBCE9200E2279F /* FinalAssC0772733Tests.swift */; };
 		9BA4E34223DBCE9200E2279F /* FinalAssC0772733UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4E34123DBCE9200E2279F /* FinalAssC0772733UITests.swift */; };
+		9BA4E35023DBCFCA00E2279F /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4E34F23DBCFCA00E2279F /* Product.swift */; };
+		9BA4E35223DBD08300E2279F /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4E35123DBD08300E2279F /* ProductTableViewController.swift */; };
+		9BA4E35423DBD0DB00E2279F /* singlteon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA4E35323DBD0DB00E2279F /* singlteon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		9BA4E33D23DBCE9200E2279F /* FinalAssC0772733UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinalAssC0772733UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA4E34123DBCE9200E2279F /* FinalAssC0772733UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalAssC0772733UITests.swift; sourceTree = "<group>"; };
 		9BA4E34323DBCE9200E2279F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BA4E34F23DBCFCA00E2279F /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		9BA4E35123DBD08300E2279F /* ProductTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
+		9BA4E35323DBD0DB00E2279F /* singlteon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singlteon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,9 @@
 				9BA4E32A23DBCE9200E2279F /* LaunchScreen.storyboard */,
 				9BA4E32D23DBCE9200E2279F /* Info.plist */,
 				9BA4E32523DBCE9100E2279F /* FinalAssC0772733.xcdatamodeld */,
+				9BA4E34F23DBCFCA00E2279F /* Product.swift */,
+				9BA4E35123DBD08300E2279F /* ProductTableViewController.swift */,
+				9BA4E35323DBD0DB00E2279F /* singlteon.swift */,
 			);
 			path = FinalAssC0772733;
 			sourceTree = "<group>";
@@ -264,7 +273,10 @@
 			files = (
 				9BA4E32123DBCE9100E2279F /* ViewController.swift in Sources */,
 				9BA4E31D23DBCE9100E2279F /* AppDelegate.swift in Sources */,
+				9BA4E35023DBCFCA00E2279F /* Product.swift in Sources */,
 				9BA4E32723DBCE9100E2279F /* FinalAssC0772733.xcdatamodeld in Sources */,
+				9BA4E35423DBD0DB00E2279F /* singlteon.swift in Sources */,
+				9BA4E35223DBD08300E2279F /* ProductTableViewController.swift in Sources */,
 				9BA4E31F23DBCE9100E2279F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
