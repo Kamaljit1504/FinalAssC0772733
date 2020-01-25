@@ -84,16 +84,16 @@ class ProductTableViewController: UITableViewController {
             }
             
         }
-//    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let controller = segue.destination as? ViewController
-//        {
-//            let PindexPath = self.tableView.indexPath(for: (sender as! UITableViewCell))!
-//            let object = product![PindexPath.row]
-//            controller.setIndex(index: PindexPath.row ,data: Int(object.id))
-//        }
-//    }
-//    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let controller = segue.destination as? ViewController
+        {
+            let PindexPath = self.tableView.indexPath(for: (sender as! UITableViewCell))!
+            let object = product![PindexPath.row]
+            controller.setIndex(index: PindexPath.row ,data: object.id)
+        }
+    }
+    
         
         
     // MARK: - Table view data source

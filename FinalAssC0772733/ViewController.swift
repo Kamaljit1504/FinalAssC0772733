@@ -12,6 +12,13 @@ import CoreData
 class ViewController: UIViewController {
     
      var products : [Product]?
+    
+    var index1: Int = 1
+       var name = " "
+       var id = 0
+       var desc = " "
+       var price = 0.0
+    
   @IBOutlet var textFields: [UITextField]!
     
     
@@ -20,9 +27,54 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         loadCoreData()
+        
+        textFields[0].text="\(id)"
+               textFields[1].text=name
+               textFields[2].text=desc
+               textFields[3].text="\(price)"
+               
     }
     
-  
+  func setIndex(index: Int,data: Int){
+               print(data);
+               id = data
+        print(id)
+               products = [Product]()
+               
+               let appDelegate = UIApplication.shared.delegate as! AppDelegate
+               let managedContext = appDelegate.persistentContainer.viewContext
+               
+               let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Products")
+               
+               do {
+                   let results = try managedContext.fetch(fetchRequest)
+                   if results is [NSManagedObject]{
+                       for result in (results as! [NSManagedObject]) {
+                           let pname = result.value(forKey: "name") as! String
+                           let pid = result.value(forKey: "id") as! Int
+                           let pdesc = result.value(forKey: "desc") as! String
+                           
+                           let pprice = result.value(forKey: "price") as! Float
+                           
+                           if (id == data)
+                           {
+                               print(name)
+                            products?.append(Product(name: pname, id: pid, desc: pdesc, price: pprice))
+                            name = pname
+                            id = Int(pid)
+                            desc = pdesc
+                            price = Double(Float(pprice))
+                               
+                           }
+                           
+                           
+                       }
+                   }
+               } catch  {
+                   print(error)
+               }
+               
+           }
     func saveCoreData(){
        clearCoreData()
            let appDelegate = UIApplication.shared.delegate as! AppDelegate
